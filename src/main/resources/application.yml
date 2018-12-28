@@ -17,9 +17,15 @@ spring:
     timeout: 2000
 
 #设置超时时间
-feign:
-  client:
-    config:
-      default:
-        connectTimeout: 2000
-        readTimeout: 2000
+#feign:
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 2000
+#        readTimeout: 2000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
